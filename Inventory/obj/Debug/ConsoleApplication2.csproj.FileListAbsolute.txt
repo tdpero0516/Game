@@ -1,0 +1,6 @@
+c:\users\treyp\onedrive\documents\visual studio 2015\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe.config
+c:\users\treyp\onedrive\documents\visual studio 2015\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+c:\users\treyp\onedrive\documents\visual studio 2015\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+c:\users\treyp\onedrive\documents\visual studio 2015\Projects\ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.csprojResolveAssemblyReference.cache
+c:\users\treyp\onedrive\documents\visual studio 2015\Projects\ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.exe
+c:\users\treyp\onedrive\documents\visual studio 2015\Projects\ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.pdb
