@@ -12,25 +12,11 @@ namespace Inventory
                          description;
         protected double weight;
 
+
         public Item(string name, string description, double weight)
         {
             this.name = name;
             this.description = description;
-            this.weight = weight;
-        }
-
-        public void setName(string name)
-        {
-            this.name = name;
-        }
-
-        public void setDescription(string description)
-        {
-            this.description = description;
-        }
-
-        public void setWeight(double weight)
-        {
             this.weight = weight;
         }
 
@@ -51,9 +37,29 @@ namespace Inventory
 
         public class Consumable : Item
         {
-            public Consumable(string name, string description, double weight) : base(name, description, weight)
+            protected int healHP,
+                          attackBoost,
+                          defenseBoost,
+                          speedBoost,
+                          willBoost,
+                          healMP;
+
+            public Consumable(string name, string description, double weight, int[] stats) : base(name, description, weight)
             {
-                // NOTHING TO DO HERE
+                if (stats.Length == 6)
+                {
+                    healHP = stats[0];
+                    attackBoost = stats[1];
+                    defenseBoost = stats[2];
+                    speedBoost = stats[3];
+                    willBoost = stats[4];
+                    healMP = stats[5];
+                }
+                else
+                {
+                    Console.WriteLine("There was a problem creating an item");
+                    this = null;
+                }
             }
         }
 
@@ -221,7 +227,7 @@ namespace Inventory
         public static void Main(string[] args)
         {
             Backpack backpack = new Backpack();
-            backpack.add(new Item.Consumable("Potion", "Heals 5 HP", 0.5));
+            backpack.add(new Item.Consumable("Potion", "Heals 5 HP", 0.5, new int[] { 5, 0, 0, 0, 0, 0, 7, 7, 7 }));
             backpack.add(new Item.Weapon("Broad Sword", "A standard blade", 5.5));
             backpack.print();
             Console.Read();
